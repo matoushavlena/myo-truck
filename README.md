@@ -31,6 +31,8 @@ I have also included [myo-java](https://github.com/NicholasAStuart/myo-java) lib
 - [myo-java](https://github.com/NicholasAStuart/myo-java) 
 - [lejOS EV3 Runtime Library](http://sourceforge.net/projects/lejos/files/lejos-EV3/0.8.1-beta/) (version 0.8.1)
 
+## Architecture Diagram
+
 ## Supported Platforms
 - Mac, Windows, Linux (possibly Android and iOS, but some modifications would have to be made)
 
