@@ -5,6 +5,8 @@ import java.rmi.RemoteException;
 import com.thalmic.myo.Hub;
 import com.thalmic.myo.Myo;
 
+import lejos.hardware.BrickFinder;
+import lejos.hardware.BrickInfo;
 import lejos.hardware.Button;
 import lejos.hardware.Sound;
 import lejos.hardware.lcd.GraphicsLCD;
@@ -14,8 +16,11 @@ import lejos.remote.ev3.RemoteEV3;
 import lejos.utility.Delay;
 
 public class MyoTruck {
+	// Steering motor
 	private RMIRegulatedMotor motorS;
+	// Left motor
 	private RMIRegulatedMotor motorL;
+	// Right motor
 	private RMIRegulatedMotor motorR;
 	private RemoteEV3 ev3;
 	private GraphicsLCD lcd;
@@ -34,7 +39,9 @@ public class MyoTruck {
 	
 	public MyoTruck(String host) throws RemoteException {
 		try {
-			this.ev3 = new RemoteEV3(host);
+			BrickInfo[] bricks = BrickFinder.discover();
+			if (bricks.length==0) throw new RuntimeException("Unable to find an EV3!");
+			this.ev3 = new RemoteEV3(bricks[0].getIPAddress());
 			ev3.setDefault();
 			Sound.beep();
 			Button.LEDPattern(4);
@@ -68,12 +75,12 @@ public class MyoTruck {
 			motorL.stop(true);
 			motorR.stop(true);
 		} catch (Exception e) {
-			this.closePorts();
+			this.close();
 			e.printStackTrace();
 		}
 	}
 	
-	private void closePorts() {
+	private void close() {
 		Button.LEDPattern(5);
 		try {
 			if (motorS!=null) motorS.close();
@@ -175,7 +182,7 @@ public class MyoTruck {
 	
 	protected void finalize() throws Throwable {
 		try {
-			this.closePorts();
+			this.close();
 		} finally {
 			super.finalize();
 		}
@@ -192,7 +199,7 @@ public class MyoTruck {
 		    MyoDataCollector dataCollector = new MyoDataCollector(myotruck);
 		    hub.addListener(dataCollector);
 		    myotruck.run(hub, dataCollector);
-		    myotruck.closePorts();
+		    myotruck.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
