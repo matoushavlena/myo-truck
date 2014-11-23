@@ -5,6 +5,9 @@ Myo hand gesture controller of Lego Mindstorm EV3 RAC3R running lejOS.
 
 ## Video
 
+## How to build the robot
+All you need to do
+
 ## Gestures
 - **Raise your hand** -> speed increase
 - **Lower your hand** -> speed decrease and switch to reverse gear
