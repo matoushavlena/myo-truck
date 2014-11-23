@@ -37,7 +37,7 @@ public class MyoTruck {
 	private static int SPEED_SENSITIVITY = 3;
 	private int steeringScale;  
 	
-	public MyoTruck(String host) throws RemoteException {
+	public MyoTruck() throws RemoteException {
 		try {
 			BrickInfo[] bricks = BrickFinder.discover();
 			if (bricks.length==0) throw new RuntimeException("Unable to find an EV3!");
@@ -190,7 +190,7 @@ public class MyoTruck {
 	
 	public static void main(String[] args) {
 		try {
-			MyoTruck myotruck = new MyoTruck("192.168.192.5");
+			MyoTruck myotruck = new MyoTruck();
 			Hub hub = new Hub("net.havlena.myo");
 		    Myo myo = hub.waitForMyo(10000);
 		    if (myo == null) {
