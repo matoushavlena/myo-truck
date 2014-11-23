@@ -32,6 +32,10 @@ I have also included [myo-java](https://github.com/NicholasAStuart/myo-java) lib
 - [lejOS EV3 Runtime Library](http://sourceforge.net/projects/lejos/files/lejos-EV3/0.8.1-beta/) (version 0.8.1)
 
 ## Architecture Diagram
+Following is one of the possible architectures I picked for this project. Although there are other options how to connect Myo to EV3:
+- Through PC, Mac, Android or iOS
+- Install Myo drivers directly on EV3 brick with leoJS
+- more...
 
 ## Supported Platforms
 - Mac, Windows, Linux (possibly Android and iOS, but some modifications would have to be made)
