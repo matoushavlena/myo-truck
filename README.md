@@ -19,9 +19,9 @@ I have also included [myo-java](https://github.com/NicholasAStuart/myo-java) lib
 ## Control Gestures
 - **Raise your hand** -> speed increase
 - **Lower your hand** -> speed decrease/switch to reverse gear
-- **Fist** pose ![Fist](https://raw.githubusercontent.com/matoushavlena/myo-truck/master/img/fist.png) -> put the truck into sleep (stop moving)
-- **Fingers spread** pose ![Fist](https://raw.githubusercontent.com/matoushavlena/myo-truck/master/img/spread.png) -> wake the truck up from sleep
-- **Thumb to pinky** pose ![Fist](https://raw.githubusercontent.com/matoushavlena/myo-truck/master/img/unlock.png) -> close the program
+- ![Fist](https://raw.githubusercontent.com/matoushavlena/myo-truck/master/img/fist.png) **Fist** pose -> put the truck into sleep (stop moving)
+- ![Spread](https://raw.githubusercontent.com/matoushavlena/myo-truck/master/img/spread.png) **Fingers spread** pose -> wake the truck up from sleep
+- ![Unlock](https://raw.githubusercontent.com/matoushavlena/myo-truck/master/img/unlock.png) **Thumb to pinky** pose -> close the program
 
 ## Used Hardware
 - Myo Armband (Developer Kit) - [more info](http://www.havlena.net/en/innovations/introducing-myo-a-gesture-control-armband-that-analyzes-muscle-activity/)
