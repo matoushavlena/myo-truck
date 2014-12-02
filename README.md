@@ -1,7 +1,7 @@
 myo-truck
 =========
 
-Myo Armband controlling Lego Mindstorm EV3 RAC3 TRUCK by hand gestures.
+Myo Armband controlling Lego Mindstorm EV3 RAC3 TRUCK with hand gestures.
 
 ## Video
 [![Myo Armband controlling Lego Mindstorm EV3 RAC3 TRUCK by hand gestures](http://img.youtube.com/vi/LsQ_2EhIpoQ/0.jpg)](http://www.youtube.com/watch?v=LsQ_2EhIpoQ)
