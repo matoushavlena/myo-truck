@@ -7,7 +7,7 @@ Myo Armband controlling Lego Mindstorm EV3 RAC3 TRUCK by hand gestures.
 [![Myo Armband controlling Lego Mindstorm EV3 RAC3 TRUCK by hand gestures](http://img.youtube.com/vi/LsQ_2EhIpoQ/0.jpg)](http://www.youtube.com/watch?v=LsQ_2EhIpoQ)
 
 ## How to build the robot
-You can follow the official building instructions for EV3 RAC3 TRUCK on [lego site](http://www.lego.com/en-us/mindstorms/build-a-robot/rac3-truck). Then you need to install lejOS on your EV3. It's quite simple and you will find all necesarry information and files [here](http://www.lejos.org/ev3.php). I recommend you to download EV3 Eclipse plugin, which makes it very convenient to control your EV3 from Eclipse environment. Also, if you have the possibility to get NETGEAR Wifi Dongle for your EV3, it will allow you to connect to your EV3 wirelessy. Otherwise you can use Bluetooth or USB connection.
+You can follow the official building instructions for EV3 RAC3 TRUCK on [lego site](http://www.lego.com/en-us/mindstorms/build-a-robot/rac3-truck). Then you need to install lejOS on your EV3. It's quite simple and you will find all necesarry information and files [here](http://www.lejos.org/ev3.php). I recommend you to download EV3 Eclipse plugin, which makes it very convenient to control your EV3 from Eclipse environment. Also, if you have the possibility to get NETGEAR Wifi Dongle for your EV3, it will allow you to connect to your EV3 wirelessly. Otherwise you can use Bluetooth or USB connection.
 
 ## Run the program
 There are two classes in the project. You need to run the `MyoTruck`.
