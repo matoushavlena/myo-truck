@@ -28,13 +28,13 @@ public class MyoTruck {
 	private boolean sleeping = false;
 	//private int totalSteps = 0;
 	// In case your maximum steering angles are shifted to either left or right, you can correct it here.
-	private static int ANGLE_STEERING_CORRECTION = 0;
+	private static int ANGLE_STEERING_CORRECTION = 50;
 	// We don't want to allow steering to maximum values
 	private static int STEERING_RESERVE_FROM_MAX = 20;
 	// The higher number, the more sensitive, 1 is the lowest
-	private static int STEERING_SENSITIVITY = 3;
+	private static int STEERING_SENSITIVITY = 4;
 	// The higher number, the more sensitive, 1 is the lowest
-	private static int SPEED_SENSITIVITY = 3;
+	private static int SPEED_SENSITIVITY = 2;
 	private int steeringScale;  
 	
 	public MyoTruck() throws RemoteException {
@@ -54,7 +54,7 @@ public class MyoTruck {
 			motorR = ev3.createRegulatedMotor("C", 'L');
 			
 			motorS.setSpeed((int)(motorS.getMaxSpeed()*0.8));
-			motorS.setAcceleration(3000);
+			motorS.setAcceleration(2000);
 			// Reset front wheels to center position
 			motorS.rotateTo(-500);
 			int angleLeft = motorS.getTachoCount();
@@ -68,8 +68,8 @@ public class MyoTruck {
 			motorS.rotateTo(steeringScale);
 			motorS.rotateTo(0);
 
-			motorL.setAcceleration(3000);
-			motorR.setAcceleration(3000);
+			motorL.setAcceleration(4000);
+			motorR.setAcceleration(4000);
 			motorL.setSpeed(0);
 			motorR.setSpeed(0);
 			motorL.stop(true);
