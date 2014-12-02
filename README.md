@@ -36,8 +36,9 @@ I have also included [myo-java](https://github.com/NicholasAStuart/myo-java) lib
 ![Myo Armband controlling Lego Mindstorm EV3 RAC3 TRUCK by hand gestures](https://raw.githubusercontent.com/matoushavlena/myo-truck/master/img/myo-truck-architecture.png)
 
 The picture above describes the architecture I picked for this project. Although there are other options how to connect Myo to EV3:
-- Through PC, Mac, Android or iOS
+- Through PC, Mac, Android or iOS devices
 - Install Myo drivers directly on EV3 brick with leoJS
+- NodeJS + websockets
 - more...
 
 ## Supported Platforms
