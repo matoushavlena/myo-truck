@@ -33,6 +33,8 @@ I have also included [myo-java](https://github.com/NicholasAStuart/myo-java) lib
 - [lejOS EV3 Runtime Library](http://sourceforge.net/projects/lejos/files/lejos-EV3/0.8.1-beta/) (version 0.8.1)
 
 ## Architecture Diagram
+![Myo Armband controlling Lego Mindstorm EV3 RAC3 TRUCK by hand gestures](https://raw.githubusercontent.com/matoushavlena/myo-truck/master/myo-truck-architecture.png)
+
 Following is one of the possible architectures I picked for this project. Although there are other options how to connect Myo to EV3:
 - Through PC, Mac, Android or iOS
 - Install Myo drivers directly on EV3 brick with leoJS
