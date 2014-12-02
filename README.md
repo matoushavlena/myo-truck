@@ -1,7 +1,7 @@
 myo-truck
 =========
 
-Myo hand gesture controller of Lego Mindstorm EV3 RAC3 TRUCK running lejOS.
+Myo Armband controlling Lego Mindstorm EV3 RAC3 TRUCK by hand gestures.
 
 ## Video
 [![Myo Armband controlling Lego Mindstorm EV3 RAC3 TRUCK by hand gestures](http://img.youtube.com/vi/LsQ_2EhIpoQ/0.jpg)](http://www.youtube.com/watch?v=LsQ_2EhIpoQ)
